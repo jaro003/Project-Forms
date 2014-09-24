@@ -38,7 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Expenditure = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -127,20 +127,47 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Last Login";
             // 
-            // textBox1
+            // Expenditure
             // 
-            this.textBox1.Location = new System.Drawing.Point(104, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 6;
+            this.Expenditure.Location = new System.Drawing.Point(104, 27);
+            this.Expenditure.Name = "Expenditure";
+            this.Expenditure.Size = new System.Drawing.Size(121, 20);
+            this.Expenditure.TabIndex = 6;
+            this.Expenditure.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // comboBox1
             // 
+            this.comboBox1.ForeColor = System.Drawing.Color.Transparent;
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Mileage",
+            "Advertising",
+            "Automobile",
+            "Commissions & Fess",
+            "Contract Labor",
+            "Depletion",
+            "Employee Benefits",
+            "Insurance (Not Health)",
+            "Insurance (Health)",
+            "Interest (Mortgage)",
+            "Interest (Other)",
+            "Legal & Professional Fees",
+            "Office Expenses",
+            "Pension & Profit Sharing Plans",
+            "Rent (Vehicles & Equipment)",
+            "Rent (Other)",
+            "Repairs and Maintenance",
+            "Supplies",
+            "Taxes and Licenses",
+            "Travel",
+            "Travel (Meals & Entertainment)",
+            "Utilities",
+            "Wages"});
             this.comboBox1.Location = new System.Drawing.Point(104, 65);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 7;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -158,7 +185,7 @@
             this.ClientSize = new System.Drawing.Size(320, 119);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Expenditure);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -188,7 +215,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Expenditure;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
     }

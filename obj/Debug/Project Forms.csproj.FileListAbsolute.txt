@@ -1,3 +1,13 @@
 c:\users\jon\documents\visual studio 2012\Projects\Project Forms\Project Forms\bin\Debug\Project Forms.exe.config
 C:\Users\Jon\Desktop\Project Forms\Project Forms\bin\Debug\Project Forms.exe.config
 C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\bin\Debug\Project Forms.exe.config
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\bin\Debug\Project Forms.exe
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\bin\Debug\Project Forms.pdb
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project Forms.csprojResolveAssemblyReference.cache
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project_Forms.Expense_Data_Entry.resources
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project_Forms.Expense_Reports.resources
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project_Forms.Home.resources
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project_Forms.Properties.Resources.resources
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project Forms.csproj.GenerateResource.Cache
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project Forms.exe
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project Forms.pdb
