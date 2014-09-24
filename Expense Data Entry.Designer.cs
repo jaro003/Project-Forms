@@ -38,9 +38,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.Expenditure = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(320, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(404, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -103,7 +104,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(0, 99);
+            this.label3.Location = new System.Drawing.Point(0, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 3;
@@ -121,71 +122,53 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(260, 0);
+            this.label5.Location = new System.Drawing.Point(331, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 5;
             this.label5.Text = "Last Login";
             // 
-            // Expenditure
+            // textBox1
             // 
-            this.Expenditure.Location = new System.Drawing.Point(104, 27);
-            this.Expenditure.Name = "Expenditure";
-            this.Expenditure.Size = new System.Drawing.Size(121, 20);
-            this.Expenditure.TabIndex = 6;
-            this.Expenditure.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Location = new System.Drawing.Point(97, 27);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.TabIndex = 6;
             // 
             // comboBox1
             // 
-            this.comboBox1.ForeColor = System.Drawing.Color.Transparent;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Mileage",
-            "Advertising",
-            "Automobile",
-            "Commissions & Fess",
-            "Contract Labor",
-            "Depletion",
-            "Employee Benefits",
-            "Insurance (Not Health)",
-            "Insurance (Health)",
-            "Interest (Mortgage)",
-            "Interest (Other)",
-            "Legal & Professional Fees",
-            "Office Expenses",
-            "Pension & Profit Sharing Plans",
-            "Rent (Vehicles & Equipment)",
-            "Rent (Other)",
-            "Repairs and Maintenance",
-            "Supplies",
-            "Taxes and Licenses",
-            "Travel",
-            "Travel (Meals & Entertainment)",
-            "Utilities",
-            "Wages"});
-            this.comboBox1.Location = new System.Drawing.Point(104, 65);
+            this.comboBox1.Location = new System.Drawing.Point(97, 65);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(187, 21);
             this.comboBox1.TabIndex = 7;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(241, 65);
+            this.button1.Location = new System.Drawing.Point(312, 65);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
             this.button1.Text = "Go";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(97, 108);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 9;
+            // 
             // Expense_Data_Entry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(320, 119);
+            this.ClientSize = new System.Drawing.Size(404, 144);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.Expenditure);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -215,8 +198,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox Expenditure;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
