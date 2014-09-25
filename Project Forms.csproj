@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control.cs" />
+    <Compile Include="Data.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="Expense Data Entry.cs">
       <SubType>Form</SubType>

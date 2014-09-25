@@ -17,13 +17,13 @@ namespace Project_Forms
         {
             InitializeComponent();
             DateTime dateTime = DateTime.UtcNow.Date;
-            label1.Text = DateTime.Now.ToString("MM/dd/yyyy" +"  | |  " + "hh:mm tt");
+            label1.Text = DateTime.Now.ToString("MM/dd/yyyy" + "  | |  " + "hh:mm tt");
 
             button1.Hide();
             button2.Hide();
             button3.Hide();
             label2.Hide();
-           
+
 
             //List<String> admins = new List<String>();
             //List<String> employees = new List<String>();
@@ -39,9 +39,9 @@ namespace Project_Forms
             //emp_name.add(employees, "Iverson");
             //emp_name.add(employees, "Magic");
 
-            
-            
-            string[] users = new string[] { "Karan", "Michelle", "Max", "Jeff" , "Ranier" , "Augustin", "Kobe", "Jordan", "Iverson", "Magic"};
+
+
+            string[] users = new string[] { "Karan", "Michelle", "Max", "Jeff", "Ranier", "Augustin", "Kobe", "Jordan", "Iverson", "Magic" };
 
             var source0 = new AutoCompleteStringCollection();
             source0.AddRange(users);
@@ -49,8 +49,8 @@ namespace Project_Forms
             comboBox1.AutoCompleteCustomSource = source0;
             comboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             comboBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
- 
-            
+
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -62,12 +62,18 @@ namespace Project_Forms
         {
 
         }
-
+      
         private void button2_Click(object sender, EventArgs e)
         {
+
+            Control result = new Control();
+            string there = result.ReturnValue1;
+            MessageBox.Show(there);
+
+
             Expense_Data_Entry form2 = new Expense_Data_Entry();
             form2.ShowDialog();
-           // this.Hide();
+            // this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -82,7 +88,7 @@ namespace Project_Forms
                 else
                     user_type = "emp";
             }
-            
+
             if (user_type == "admin")
             {
                 comboBox1.Hide();
@@ -104,19 +110,14 @@ namespace Project_Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Expense_Reports form3 = new Expense_Reports();
             form3.ShowDialog();
-           // this.Hide();
+            // this.Hide();
         }
-
-        private void Home_Load(object sender, EventArgs e)
-        {
-
-        }
-        }   
- }
+    }
+}
