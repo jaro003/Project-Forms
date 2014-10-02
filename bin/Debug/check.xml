@@ -1,15 +1,120 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--LINQ to XML Contacts XML Example-->
-<?MyApp 123-44-4444?>
-<contacts>
-  <contact>
-    <name>Patrick Hines</name>
-    <phone>206-555-0144</phone>
-    <address>
-      <street1>123 Main St</street1>
-      <city>Mercer Island</city>
-      <state>WA</state>
-      <postal>68042</postal>
-    </address>
-  </contact>
-</contacts>
+<!--This database will store transactions under <Transaction> label-->
+<!--This transaction history will be stored under History_Username-->
+<App_Records>
+  <All_Transactions>
+    <Transaction Id="1">
+      <Added_by>Michelle</Added_by>
+      <Date>2014-09-28T00:00:00</Date>
+      <Category>Insurance (not health)</Category>
+      <Expenditure>90.00</Expenditure>
+    </Transaction>
+    <Transaction Id="2">
+      <Added_by>Michelle</Added_by>
+      <Date>2014-09-29T00:00:00</Date>
+      <Category>Commissions &amp; Fees</Category>
+      <Expenditure>37.45</Expenditure>
+    </Transaction>
+    <Transaction Id="3">
+      <Added_by>Michelle</Added_by>
+      <Date>2014-09-30T00:00:00</Date>
+      <Category>Interest (other)</Category>
+      <Expenditure>5503.55</Expenditure>
+    </Transaction>
+  </All_Transactions>
+  <Change_History>
+    <DefaultID>4</DefaultID>
+    <Record ChangeID="1">
+      <Transaction_Date>2014-09-28T00:00:00</Transaction_Date>
+      <Adding_user>Michelle</Adding_user>
+    </Record>
+    <Record ChangeID="2">
+      <Transaction_Date>2014-09-29T00:00:00</Transaction_Date>
+      <Adding_user>Michelle</Adding_user>
+    </Record>
+    <Record ChangeID="3">
+      <Transaction_Date>2014-09-30T00:00:00</Transaction_Date>
+      <Adding_user>Michelle</Adding_user>
+    </Record>
+  </Change_History>
+  <Login_History>
+    <Log username="Michelle">
+      <last_login>2014-10-01T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-01T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-01T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-01T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-01T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-01T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-01T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-01T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-01T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-01T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-01T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Karan">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Karan">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Karan">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Karan">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-10-02T00:00:00Z</last_login>
+    </Log>
+  </Login_History>
+</App_Records>

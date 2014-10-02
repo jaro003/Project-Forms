@@ -10,23 +10,41 @@ namespace Project_Forms
         public string ReturnValue1 { get; set; } 
         public void createxmlfile()
         {
-            string result;
             Data xmlcreation  = new Data();
-            if (xmlcreation.xmlcheck() == true)
-            {
-                string there;
-                there = "the file exists";
-                result = there;
-            }
-            else
+            if (xmlcreation.xmlcheck() == false)
             {
                 xmlcreation.xmlcreate();
-                string creating = "Not there, So I am creating";
-                result =  creating;
-            }
-            result = this.ReturnValue1;
+            }            
+        }
+
+        public void addatransaction(decimal expenditure, string category, DateTime date, string name)
+        {
+
+            Data newtransaction = new Data();
+            newtransaction.add_transaction(expenditure, category, date,name);
+            newtransaction.add_history(date, name);
+            
+        }
+        
+        public void add_history(string name, DateTime date)
+        {
+            Data newtransaction = new Data();
+            newtransaction.login_history(name, date);
+        }
+
+    
+        public void loadExpenseReport(DateTime start, DateTime end, string category)
+        {
+            Data expenses = new Data();
+            expenses.loadExpenses(start, end, category);
+            //decimal exp = expenses.ex;
+
+           // MessageBox.Show("Expense:" + exp);
+
+        }
     }
 
 
-   }
+
+
 }

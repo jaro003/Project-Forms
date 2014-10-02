@@ -13,12 +13,22 @@ namespace Project_Forms
     public partial class Home : Form
     {
         string user_type;
+        DateTime date;
         public Home()
         {
             InitializeComponent();
+            
             DateTime dateTime = DateTime.UtcNow.Date;
-            label1.Text = DateTime.Now.ToString("MM/dd/yyyy" + "  | |  " + "hh:mm tt");
+            label1.Text = DateTime.Now.ToString("MM/dd/yyyy");
+            label4.Text = DateTime.Now.ToString("hh:mm tt");
 
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+
+            date = dateTime;
             button1.Hide();
             button2.Hide();
             button3.Hide();
@@ -44,34 +54,24 @@ namespace Project_Forms
             string[] users = new string[] { "Karan", "Michelle", "Max", "Jeff", "Ranier", "Augustin", "Kobe", "Jordan", "Iverson", "Magic" };
 
             var source0 = new AutoCompleteStringCollection();
-            source0.AddRange(users);
+            //source0.AddRange(users);
             comboBox1.Items.AddRange(users);
-            comboBox1.AutoCompleteCustomSource = source0;
-            comboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            comboBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            //comboBox1.AutoCompleteCustomSource = source0;
+            //comboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            //comboBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
 
 
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        
+     
       
         private void button2_Click(object sender, EventArgs e)
         {
-
-            Control result = new Control();
-            string there = result.ReturnValue1;
-            MessageBox.Show(there);
+           
 
 
-            Expense_Data_Entry form2 = new Expense_Data_Entry();
+
+           Expense_Data_Entry form2 = new Expense_Data_Entry(label2.Text);
             form2.ShowDialog();
             // this.Hide();
         }
@@ -79,6 +79,8 @@ namespace Project_Forms
         private void button4_Click(object sender, EventArgs e)
         {
             label2.Text = comboBox1.Text;
+            
+            
             if (comboBox1.Text != "")
             {
                 label2.Show();
@@ -88,6 +90,7 @@ namespace Project_Forms
                 else
                     user_type = "emp";
             }
+            else { MessageBox.Show("You did not pick a user"); }
 
             if (user_type == "admin")
             {
@@ -104,20 +107,37 @@ namespace Project_Forms
                 button2.Show();
                 button3.Show();
             }
+            Control login = new Control();
+            Control create_check_xml = new Control();
+            create_check_xml.createxmlfile();
+            login.add_history(label2.Text, date);
         }
 
 
 
-        private void button1_Click(object sender, EventArgs e)
+  private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Expense_Reports form3 = new Expense_Reports();
+            Expense_Reports form3 = new Expense_Reports(label2.Text);
             form3.ShowDialog();
             // this.Hide();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+   
+
     }
 }

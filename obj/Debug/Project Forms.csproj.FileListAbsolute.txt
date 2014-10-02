@@ -44,3 +44,25 @@ C:\Users\Waheguru\Desktop\Project Forms\Project Forms\Project Forms\obj\Debug\Pr
 C:\Users\Waheguru\Desktop\Project Forms\Project Forms\Project Forms\obj\Debug\Project_Forms.Home.resources
 C:\Users\Waheguru\Desktop\Project Forms\Project Forms\Project Forms\obj\Debug\Project_Forms.Properties.Resources.resources
 C:\Users\Waheguru\Desktop\Project Forms\Project Forms\Project Forms\obj\Debug\Project Forms.csproj.GenerateResource.Cache
+H:\Desktop\Project Forms\Project Forms\Project Forms\bin\Debug\Project Forms.exe.config
+H:\Desktop\Project Forms\Project Forms\Project Forms\obj\Debug\Project Forms.exe
+H:\Desktop\Project Forms\Project Forms\Project Forms\obj\Debug\Project Forms.pdb
+H:\Desktop\Project Forms\Project Forms\Project Forms\obj\Debug\Project Forms.csprojResolveAssemblyReference.cache
+H:\Desktop\Project Forms\Project Forms\Project Forms\obj\Debug\Project_Forms.Expense_Data_Entry.resources
+H:\Desktop\Project Forms\Project Forms\Project Forms\obj\Debug\Project_Forms.Expense_Reports.resources
+H:\Desktop\Project Forms\Project Forms\Project Forms\obj\Debug\Project_Forms.Home.resources
+H:\Desktop\Project Forms\Project Forms\Project Forms\obj\Debug\Project_Forms.Properties.Resources.resources
+H:\Desktop\Project Forms\Project Forms\Project Forms\obj\Debug\Project Forms.csproj.GenerateResource.Cache
+H:\Desktop\Project Forms\Project Forms\Project Forms\bin\Debug\Project Forms.exe
+H:\Desktop\Project Forms\Project Forms\Project Forms\bin\Debug\Project Forms.pdb
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\bin\Debug\Project Forms.exe.config
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project Forms.exe
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project Forms.pdb
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\bin\Debug\Project Forms.exe
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\bin\Debug\Project Forms.pdb
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project Forms.csprojResolveAssemblyReference.cache
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project_Forms.Expense_Data_Entry.resources
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project_Forms.Expense_Reports.resources
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project_Forms.Home.resources
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project_Forms.Properties.Resources.resources
+C:\Users\Michelle\Desktop\CS441\Project\Project Forms\Project Forms\obj\Debug\Project Forms.csproj.GenerateResource.Cache

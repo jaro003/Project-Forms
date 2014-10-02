@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--This database will store transactions under <Transaction> label-->
+<!--This transaction history will be stored under History_Username-->
+<App_Records>
+  <All_Transactions>
+    <Transaction Id="1">
+      <Added_by>Ranier</Added_by>
+      <Expenditure>123</Expenditure>
+      <Category>Insurance (health)</Category>
+      <Date>2014-09-29T00:00:00</Date>
+    </Transaction>
+    <Transaction Id="2">
+      <Added_by>Jeff</Added_by>
+      <Expenditure>12312</Expenditure>
+      <Category>Advertising</Category>
+      <Date>2014-09-29T00:00:00</Date>
+    </Transaction>
+    <Transaction Id="3">
+      <Added_by>Ranier</Added_by>
+      <Expenditure>1231231</Expenditure>
+      <Category>Insurance (health)</Category>
+      <Date>2014-09-29T00:00:00</Date>
+    </Transaction>
+    <Transaction Id="4">
+      <Added_by>Ranier</Added_by>
+      <Expenditure>123123</Expenditure>
+      <Category>Advertising</Category>
+      <Date>2014-09-30T00:00:00</Date>
+    </Transaction>
+  </All_Transactions>
+  <Change_History>
+    <DefaultID>5</DefaultID>
+    <Record ChangeID="1">
+      <Transaction_Date>2014-09-29T00:00:00</Transaction_Date>
+      <Adding_user>Ranier</Adding_user>
+    </Record>
+    <Record ChangeID="2">
+      <Transaction_Date>2014-09-29T00:00:00</Transaction_Date>
+      <Adding_user>Jeff</Adding_user>
+    </Record>
+    <Record ChangeID="3">
+      <Transaction_Date>2014-09-29T00:00:00</Transaction_Date>
+      <Adding_user>Ranier</Adding_user>
+    </Record>
+    <Record ChangeID="4">
+      <Transaction_Date>2014-09-30T00:00:00</Transaction_Date>
+      <Adding_user>Ranier</Adding_user>
+    </Record>
+  </Change_History>
+  <Login_History>
+    <Log username="">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="Kobe">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-29T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jordan">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Augustin">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Kobe">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Augustin">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Augustin">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Michelle">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Augustin">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Augustin">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Karan">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Augustin">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Augustin">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Augustin">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Jeff">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Ranier">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Iverson">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+    <Log username="Max">
+      <last_login>2014-09-30T00:00:00Z</last_login>
+    </Log>
+  </Login_History>
+</App_Records>
