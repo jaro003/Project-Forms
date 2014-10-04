@@ -39,7 +39,7 @@ namespace Project_Forms
             expenses.loadExpenses(start, end, category);
             //decimal exp = expenses.ex;
 
-           // MessageBox.Show("Expense:" + exp);
+           //MessageBox.Show("Expense:" + exp);
 
         }
     }

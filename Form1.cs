@@ -137,6 +137,11 @@ namespace Project_Forms
             Application.Restart();
         }
 
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
+
    
 
     }
