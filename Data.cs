@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.Xml;
 namespace Project_Forms
 {
-    public class Transaction
+    class Transaction
     {
         public DateTime Date { get; set; }
         public string Category { get; set; }
@@ -22,8 +22,10 @@ namespace Project_Forms
     {
         //decimal ex = 0;
         int idnum = 0;
-        Transaction trans = new Transaction();
-        public List<Transaction> expenseReport = new List<Transaction>();//List of expenses requested by user
+        //Transaction trans = new Transaction();
+        //public List<Transaction> expenseReport = new List<Transaction>();//List of expenses requested by user
+        //private DateTime Date;
+        //private string Category;
 
         public void xmlcreate()
         {
@@ -96,49 +98,62 @@ namespace Project_Forms
 //Michelle Jaro------------------------------------------------------------------------------------------------------------------------------------------------------
         public void loadExpenses(DateTime start, DateTime end, string category)
         {
+            List<Transaction> expenseReport = new List<Transaction>();//List of expenses requested by user
+            Transaction trans = new Transaction();
+            //DateTime d;
             //Identify all the data that matches the parameters
             XDocument xmlDoc = XDocument.Load(@"check.xml");
             if (category == "All Cateogires")//Transactions for all categories in specified time frame
             {
                 var all = from exp in xmlDoc.Descendants("Transaction")
                           where ((DateTime)exp.Element("Date") >= start || (DateTime)exp.Element("Date") <= end)
-                          select new
-                          {
-                              date = (DateTime)exp.Element("Date"),
-                              category = exp.Element("Category").Value,
-                              expense = exp.Element("Expenditure").Value
-                          };
-                foreach (var exp in all)
+                          select new Transaction
+                            {
+                              Date = (DateTime)exp.Element("Date"),
+                              Category = exp.Element("Category").Value,
+                              Expense = (Decimal)exp.Element("Expenditure")
+                            };
+
+                expenseReport = all.ToList();
+
+                /*foreach (var exp in all)
                 {
-                    trans.Date = exp.date;
-                    trans.Category = exp.category;
-                    trans.Expense = Convert.ToDecimal(exp.expense);
+                    trans.Date = exp.Date;
+                    trans.Category = exp.Category;
+                    trans.Expense = Convert.ToDecimal(exp.Expense);
                     expenseReport.Add(trans);
+                }*/
+                //MessageBox.Show(expenseReport);
+
+                for(int i = 0; i <= expenseReport.Count; i++)
+                {
+                    MessageBox.Show("Date: " + expenseReport[i].Date + "\n" +
+                                    "Category: " + expenseReport[i].Category + "\n" +
+                                    "Expense : " + expenseReport[i].Expense);
                 }
+
             }
             else//Transactions with one specific category in specified time frame
             {
                 var one = from e in xmlDoc.Descendants("Transaction")
                           where ((e.Element("Category").Value == category) && (((DateTime)e.Element("Date") >= start) || (DateTime)e.Element("Date") <= end))
-                          select new
+                          select new Transaction
                           {
-                              date = (DateTime)e.Element("Date"),
-                              category = e.Element("Category").Value,
-                              expense = e.Element("Expenditure").Value
+                              Date = (DateTime)e.Element("Date"),
+                              Category = e.Element("Category").Value,
+                              Expense = (Decimal)e.Element("Expenditure")
                           };
 
-                foreach (var e in one)
+                expenseReport = one.ToList();
+
+                for (int i = 0; i <= expenseReport.Count; i++)
                 {
-                    trans.Date = e.date;
-                    trans.Category = e.category;
-                    trans.Expense = Convert.ToDecimal(e.expense);
-                    expenseReport.Add(trans);
+                    MessageBox.Show("Date: " + expenseReport[i].Date + "\n" +
+                                    "Category: " + expenseReport[i].Category + "\n" +
+                                    "Expense : " + expenseReport[i].Expense);
                 }
             }
-
-            //string toDisplay = string.Join(Environment.NewLine, expenseReport);
-            //MessageBox.Show(toDisplay);
-        }   
+        }
     }
 } 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------        

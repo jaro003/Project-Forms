@@ -64,10 +64,10 @@ namespace Project_Forms
                 DateTime startDate = Convert.ToDateTime(dateTimePicker1.Value.ToShortDateString());
                 DateTime endDate = Convert.ToDateTime(dateTimePicker2.Value.ToShortDateString());
                 Control loadData = new Control();
-                Data loadReport = new Data();
+                //Data loadReport = new Data();
 
                 loadData.loadExpenseReport(startDate, endDate, comboBox1.Text);//Use start date, end date, and category
-                dataGridView1.DataSource = loadReport.expenseReport;//Display in text field (date, expense, total expense)
+                //dataGridView1.DataSource = loadReport.expenseReport;//Display in text field (date, expense, total expense)
                   
             }
         }
