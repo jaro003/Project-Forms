@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.Xml;
 namespace Project_Forms
 {
-    class Transaction
+    public class Transaction
     {
         public DateTime Date { get; set; }
         public string Category { get; set; }
@@ -18,15 +18,10 @@ namespace Project_Forms
         //public string priority { get; set; }
     }
 
-   class Data
+   public class Data
     {
-        //decimal ex = 0;
         int idnum = 0;
-        //Transaction trans = new Transaction();
-        //public List<Transaction> expenseReport = new List<Transaction>();//List of expenses requested by user
-        //private DateTime Date;
-        //private string Category;
-
+     
         public void xmlcreate()
         {
 
@@ -100,10 +95,11 @@ namespace Project_Forms
         {
             List<Transaction> expenseReport = new List<Transaction>();//List of expenses requested by user
             Transaction trans = new Transaction();
-            //DateTime d;
-            //Identify all the data that matches the parameters
+
             XDocument xmlDoc = XDocument.Load(@"check.xml");
-            if (category == "All Cateogires")//Transactions for all categories in specified time frame
+
+            //Search through XML files to retrieve the necessary information based on user input
+            if (category == "All Categories")//Transactions for all categories in specified time frame
             {
                 var all = from exp in xmlDoc.Descendants("Transaction")
                           where ((DateTime)exp.Element("Date") >= start || (DateTime)exp.Element("Date") <= end)
@@ -113,25 +109,8 @@ namespace Project_Forms
                               Category = exp.Element("Category").Value,
                               Expense = (Decimal)exp.Element("Expenditure")
                             };
-
+                
                 expenseReport = all.ToList();
-
-                /*foreach (var exp in all)
-                {
-                    trans.Date = exp.Date;
-                    trans.Category = exp.Category;
-                    trans.Expense = Convert.ToDecimal(exp.Expense);
-                    expenseReport.Add(trans);
-                }*/
-                //MessageBox.Show(expenseReport);
-
-                for(int i = 0; i <= expenseReport.Count; i++)
-                {
-                    MessageBox.Show("Date: " + expenseReport[i].Date + "\n" +
-                                    "Category: " + expenseReport[i].Category + "\n" +
-                                    "Expense : " + expenseReport[i].Expense);
-                }
-
             }
             else//Transactions with one specific category in specified time frame
             {
@@ -145,15 +124,14 @@ namespace Project_Forms
                           };
 
                 expenseReport = one.ToList();
-
-                for (int i = 0; i <= expenseReport.Count; i++)
+            }
+                 for(int i = 0; i < expenseReport.Count; i++)//Prints out the list of the results in message boxes
                 {
                     MessageBox.Show("Date: " + expenseReport[i].Date + "\n" +
                                     "Category: " + expenseReport[i].Category + "\n" +
-                                    "Expense : " + expenseReport[i].Expense);
-                }
-            }
-        }
+                                    "Expense : " + expenseReport[i].Expense;
+                 }
+        }    
     }
 } 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------        
