@@ -17,14 +17,15 @@ namespace Project_Forms
         public string authentication = "Medium";
     }
    
-    public class Transaction
+    /*public class Transaction
     {
         public DateTime date;
         public double expense;
         public string cust_name;
         public int cust_id;
         public string priority;
-    }
+        public string category;
+    }*/
     
     public class data
     {
