@@ -55,6 +55,7 @@ namespace Project_Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //List<Transaction> transList;
             if(comboBox1.Text == "")
             {
                 MessageBox.Show("Error: You forgot to pick a category");
@@ -67,7 +68,7 @@ namespace Project_Forms
                 //Data loadReport = new Data();
 
                 loadData.loadExpenseReport(startDate, endDate, comboBox1.Text);//Use start date, end date, and category
-                //dataGridView1.DataSource = loadReport.expenseReport;//Display in text field (date, expense, total expense)
+                //dataGridView1.DataSource = loadData.expe;//Display in text field (date, expense, total expense)
                   
             }
         }

@@ -14,7 +14,7 @@ namespace Project_Forms
             if (xmlcreation.xmlcheck() == false)
             {
                 xmlcreation.xmlcreate();
-            }            
+            }           
         }
 
         public void addatransaction(decimal expenditure, string category, DateTime date, string name)
@@ -37,14 +37,18 @@ namespace Project_Forms
         {
             Data expenses = new Data();
             expenses.loadExpenses(start, end, category);
+
+            /*for (int i = 0; i < expenses.expenseReport.Count; i++)
+            {
+                MessageBox.Show("Date: " + expenseReport[i].Date + "\n" +
+                                "Category: " + expenseReport[i].Category + "\n" +
+                                "Expense : " + expenseReport[i].Expense);
+            }*/
             //decimal exp = expenses.ex;
 
            //MessageBox.Show("Expense:" + exp);
 
         }
     }
-
-
-
 
 }

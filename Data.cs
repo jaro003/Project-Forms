@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Xml;
 namespace Project_Forms
 {
+//Michelle Jaro-----------------------------------------------------------------------------------------------------------------------------------------------------
     public class Transaction
     {
         public DateTime Date { get; set; }
@@ -17,7 +18,7 @@ namespace Project_Forms
         //public int cust_id { get; set; }
         //public string priority { get; set; }
     }
-
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
    public class Data
     {
         int idnum = 0;
@@ -91,8 +92,12 @@ namespace Project_Forms
            doc.Save(@"check.xml");
         }
 //Michelle Jaro------------------------------------------------------------------------------------------------------------------------------------------------------
-        public void loadExpenses(DateTime start, DateTime end, string category)
+//Purpose: Opens the XML file to look for and display the transactions that match the time frame and category specified by the user. It also calculates the total 
+//expenses in that time frame and category and displays it.
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+       public void loadExpenses(DateTime start, DateTime end, string category)
         {
+            decimal total = 0;
             List<Transaction> expenseReport = new List<Transaction>();//List of expenses requested by user
             Transaction trans = new Transaction();
 
@@ -129,8 +134,12 @@ namespace Project_Forms
                 {
                     MessageBox.Show("Date: " + expenseReport[i].Date + "\n" +
                                     "Category: " + expenseReport[i].Category + "\n" +
-                                    "Expense : " + expenseReport[i].Expense;
+                                    "Expense : " + expenseReport[i].Expense);
+
+                    total = total + expenseReport[i].Expense;
                  }
+
+                 MessageBox.Show("Total: " + total);
         }    
     }
 } 
